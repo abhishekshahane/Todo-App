@@ -38,5 +38,15 @@ function init(){
     else{
         console.log("EXISTING USER")
         console.log(JSON.parse(localStorage.getItem('dict')))
+        var array = JSON.parse(localStorage.getItem('array'));
+        var ol = document.getElementById("list");
+        for (var i=0;i<array.length;i++){
+            var lie = document.createElement("li")
+            lie.value = i;
+            lie.innerText = array[i];
+            lie.id = i;
+            ol.appendChild(lie)
+        }
+
     }
 }
