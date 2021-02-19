@@ -1,14 +1,19 @@
+<!DOCTYPE html>
 <head>
     <script src="script.js"></script>
     <title>Todo</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body onload="init()">
-    <input type="text" placeholder="Type todo here" style="display:block;margin:auto;" id="todo-type">
+    <input type="text" placeholder="Type todo here" style="display:block;margin:auto;margin-top:10px;" id="todo-type">
     <br>
     <input type="submit" style="display:block;margin:auto;" onclick="validate()">
     <br>
     <ol style="display:block;margin:auto;" id="list">
     </ol>
     <br>
-    <button style="display:block;margin:auto;" onclick="save()">Save</button>
+    <div id="footer">
+        <p id="footer-1">Hello and welcome! This is a sample to-do app that you can use for keeping track of your day to day activities.</p>
+        <button id="footer-2">Continue</button>
+    </div>
 </body>
