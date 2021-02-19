@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    padding:0;
+}
+#footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+li{
+    word-wrap:break-word;
+}
+#list{
+    height:calc(62vh + 15px);
+    width:calc(20vw + 10px);
+    overflow:auto;
+}
+#list::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+#list::-webkit-scrollbar-thumb{
+    background-color:#778899;
+    border-radius:10px;
+}
