@@ -47,7 +47,8 @@ body > *:not(#footer) {
     list-style-type:none;
     height:calc(62vh + 15px);
     width:calc(30vw + 10px);
-
+    display:block;
+    margin:auto;
     overflow:auto;
 }
 #list::-webkit-scrollbar
