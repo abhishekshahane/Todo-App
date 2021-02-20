@@ -1,4 +1,3 @@
-
 function unique_id() {
   return '_' + Math.random().toString(36).substr(2, 9);
 }
@@ -45,6 +44,7 @@ function init(){
             lie.value = i;
             lie.innerText = array[i];
             lie.id = i;
+
             ol.appendChild(lie)
         }
 
