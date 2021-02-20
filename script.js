@@ -50,3 +50,8 @@ function init(){
 
     }
 }
+function change(){
+    var footer = document.getElementById('footer')
+    footer.style.display="none";
+    $('body > *').css("filter","blur(0px)");
+}
