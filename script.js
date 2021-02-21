@@ -5,20 +5,17 @@ function validate(){
     var array = JSON.parse(localStorage.getItem('array'))
     if (document.getElementById("todo-type").value != ''){
         var ol = document.getElementById("list");
-        console.log(ol)
         array.push(document.getElementById("todo-type").value);
         var lie = document.createElement("li");
         lie.value = [(array.length)-1];
         lie.innerText = array[array.length-1]
         lie.id = [(array.length)-1];
-        ol.appendChild(lie)
         //updates
         localStorage.setItem('array', JSON.stringify(array))
         var id = localStorage.getItem('id');
         var dict = JSON.parse(localStorage.getItem('array'))
         dict[id] =  array;
         localStorage.setItem(dict, JSON.stringify(dict))
-        console.log(dict)
 
 
     }
@@ -26,7 +23,6 @@ function validate(){
 function init(){
     var present = localStorage.getItem('visited') || '';
     if (present!='true'){
-        console.log("NEW USER")
         var u = unique_id()
         //sets variables for the user
         localStorage.setItem('id', u)
@@ -35,7 +31,6 @@ function init(){
         localStorage.setItem('visited', 'true')
     }
     else{
-        console.log("EXISTING USER")
         console.log(JSON.parse(localStorage.getItem('dict')))
         var array = JSON.parse(localStorage.getItem('array'));
         var ol = document.getElementById("list");
