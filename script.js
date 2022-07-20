@@ -10,6 +10,7 @@ function validate(){
         lie.value = [(array.length)-1];
         lie.innerText = array[array.length-1]
         lie.id = [(array.length)-1];
+        ol.append(lie);
         //updates
         localStorage.setItem('array', JSON.stringify(array))
         var id = localStorage.getItem('id');
